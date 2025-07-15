@@ -148,19 +148,9 @@ async def create_thpu_whitepaper() -> WhitePaper:
     # Create authors
     authors = [
         Author(
-            name="Dr. Alexandra Chen",
-            affiliation="Advanced Computing Research Institute",
-            email="a.chen@acri.edu"
-        ),
-        Author(
-            name="Prof. Marcus Rodriguez",
-            affiliation="Quantum-Classical Systems Lab, MIT",
-            email="m.rodriguez@mit.edu"
-        ),
-        Author(
-            name="Dr. Sarah Kim",
-            affiliation="Neuromorphic Computing Division, Stanford",
-            email="s.kim@stanford.edu"
+            name="FactsUniv Research Team",
+            affiliation="FactsUniv Computing Research Division",
+            email="research@factsuniv.com"
         )
     ]
     
