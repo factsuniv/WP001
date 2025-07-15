@@ -1,38 +1,265 @@
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 }
 
 .App-link {
-    color: #61dafb;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* White Paper Styling */
+.whitepaper-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+}
+
+.whitepaper-header {
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 20px;
+}
+
+.whitepaper-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.whitepaper-authors {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.whitepaper-abstract {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-left: 4px solid #3b82f6;
+  margin: 20px 0;
+}
+
+.whitepaper-section {
+  margin-bottom: 30px;
+}
+
+.whitepaper-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.whitepaper-section h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.whitepaper-section h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.whitepaper-content {
+  text-align: justify;
+  color: #374151;
+  margin-bottom: 15px;
+}
+
+.whitepaper-figure {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.whitepaper-figure-caption {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.whitepaper-references {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #e5e7eb;
+}
+
+.whitepaper-reference {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.whitepaper-reference::before {
+  content: counter(reference);
+  counter-increment: reference;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.whitepaper-keywords {
+  margin-top: 20px;
+}
+
+.whitepaper-keyword {
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+/* Presentation Styling */
+.presentation-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.presentation-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px;
+  text-align: center;
+}
+
+.presentation-slide h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.presentation-slide h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.presentation-slide h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #87ceeb;
+}
+
+.presentation-slide p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  max-width: 800px;
+}
+
+.presentation-slide ul {
+  text-align: left;
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+.presentation-slide li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.presentation-navigation {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.presentation-nav-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.presentation-nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.presentation-nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .whitepaper-container {
+    padding: 10px;
+  }
+  
+  .whitepaper-title {
+    font-size: 2rem;
+  }
+  
+  .presentation-slide h1 {
+    font-size: 2rem;
+  }
+  
+  .presentation-slide h2 {
+    font-size: 1.8rem;
+  }
+  
+  .presentation-slide h3 {
+    font-size: 1.5rem;
+  }
+  
+  .presentation-slide p {
+    font-size: 1rem;
+  }
 }
