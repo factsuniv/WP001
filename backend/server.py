@@ -894,11 +894,9 @@ async def create_thpu_presentation() -> Presentation:
             content="""# Temporal-Holographic Processing Units
 ## A Revolutionary Computing Architecture for the AI Era
 
-### Dr. Alexandra Chen, Prof. Marcus Rodriguez, Dr. Sarah Kim
+### FactsUniv Research Team
 
-*Advanced Computing Research Institute*
-*Quantum-Classical Systems Lab, MIT*
-*Neuromorphic Computing Division, Stanford*
+*FactsUniv Computing Research Division*
 
 ---
 
