@@ -1179,9 +1179,8 @@ async def create_thpu_presentation() -> Presentation:
 - Global development initiative
 
 ### Contact Information
-- Dr. Alexandra Chen: a.chen@acri.edu
-- Prof. Marcus Rodriguez: m.rodriguez@mit.edu
-- Dr. Sarah Kim: s.kim@stanford.edu
+- FactsUniv Research Team: research@factsuniv.com
+- Website: www.factsuniv.com
 
 ### Next Steps
 - Prototype development
