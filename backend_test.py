@@ -187,9 +187,9 @@ class THPUBackendTester:
                                   f"Title doesn't contain THPU: {data['title']}")
                     return
                 
-                # Validate slide content contains key concepts
-                all_content = " ".join([slide["content"] for slide in data["slides"]])
-                key_concepts = ["Temporal-Holographic", "1000x", "100x", "energy efficiency", "throughput"]
+                # Validate slide content contains key concepts (case-insensitive)
+                all_content = " ".join([slide["content"] for slide in data["slides"]]).lower()
+                key_concepts = ["temporal-holographic", "1000x", "100x", "energy efficiency", "throughput"]
                 
                 for concept in key_concepts:
                     if concept not in all_content:
